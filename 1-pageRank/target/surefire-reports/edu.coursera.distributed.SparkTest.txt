@@ -1,19 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: edu.coursera.distributed.SparkTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 7.964 sec <<< FAILURE! - in edu.coursera.distributed.SparkTest
-testUniformTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 6.555 sec  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 7.265 sec <<< FAILURE! - in edu.coursera.distributed.SparkTest
+testIncreasingTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 5.395 sec  <<< ERROR!
 java.lang.UnsupportedOperationException
-	at edu.coursera.distributed.PageRank.sparkPageRank(PageRank.java:52)
+	at edu.coursera.distributed.PageRank.sparkPageRank(PageRank.java:43)
 	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:180)
-	at edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
+	at edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
 
-testIncreasingTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 0.468 sec  <<< ERROR!
+testIncreasingFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 0.702 sec  <<< ERROR!
 org.apache.spark.SparkException: Only one SparkContext may be running in this JVM (see SPARK-2243). To ignore this error, set spark.driver.allowMultipleContexts = true. The currently running SparkContext was created at:
 org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
 edu.coursera.distributed.SparkTest.getSparkContext(SparkTest.java:38)
 edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:170)
-edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
+edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -39,14 +39,14 @@ java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
 	at edu.coursera.distributed.SparkTest.getSparkContext(SparkTest.java:38)
 	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:170)
-	at edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
+	at edu.coursera.distributed.SparkTest.testIncreasingFiftyThousand(SparkTest.java:272)
 
-testRandomTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 0.076 sec  <<< ERROR!
+testUniformTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 0.209 sec  <<< ERROR!
 org.apache.spark.SparkException: Only one SparkContext may be running in this JVM (see SPARK-2243). To ignore this error, set spark.driver.allowMultipleContexts = true. The currently running SparkContext was created at:
 org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
 edu.coursera.distributed.SparkTest.getSparkContext(SparkTest.java:38)
 edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:170)
-edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
+edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -72,14 +72,14 @@ java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
 	at edu.coursera.distributed.SparkTest.getSparkContext(SparkTest.java:38)
 	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:170)
-	at edu.coursera.distributed.SparkTest.testRandomTwentyThousand(SparkTest.java:283)
+	at edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
 
-testUniformFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 0.321 sec  <<< ERROR!
+testUniformFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 0.327 sec  <<< ERROR!
 org.apache.spark.SparkException: Only one SparkContext may be running in this JVM (see SPARK-2243). To ignore this error, set spark.driver.allowMultipleContexts = true. The currently running SparkContext was created at:
 org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
 edu.coursera.distributed.SparkTest.getSparkContext(SparkTest.java:38)
 edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:170)
-edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
+edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,12 +107,12 @@ java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:170)
 	at edu.coursera.distributed.SparkTest.testUniformFiftyThousand(SparkTest.java:250)
 
-testIncreasingFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 0.223 sec  <<< ERROR!
+testRandomTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 0.186 sec  <<< ERROR!
 org.apache.spark.SparkException: Only one SparkContext may be running in this JVM (see SPARK-2243). To ignore this error, set spark.driver.allowMultipleContexts = true. The currently running SparkContext was created at:
 org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
 edu.coursera.distributed.SparkTest.getSparkContext(SparkTest.java:38)
 edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:170)
-edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
+edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -138,14 +138,14 @@ java.base/java.lang.reflect.Method.invoke(Method.java:567)
 	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
 	at edu.coursera.distributed.SparkTest.getSparkContext(SparkTest.java:38)
 	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:170)
-	at edu.coursera.distributed.SparkTest.testIncreasingFiftyThousand(SparkTest.java:272)
+	at edu.coursera.distributed.SparkTest.testRandomTwentyThousand(SparkTest.java:283)
 
-testRandomFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 0.28 sec  <<< ERROR!
+testRandomFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 0.407 sec  <<< ERROR!
 org.apache.spark.SparkException: Only one SparkContext may be running in this JVM (see SPARK-2243). To ignore this error, set spark.driver.allowMultipleContexts = true. The currently running SparkContext was created at:
 org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
 edu.coursera.distributed.SparkTest.getSparkContext(SparkTest.java:38)
 edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:170)
-edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
+edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
