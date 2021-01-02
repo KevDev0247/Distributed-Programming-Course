@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * A single website in a graph of websites.
  */
-public final class Website implements Serializable {
+public class Website implements Serializable {
     /**
      * Unique ID for this website.
      */
