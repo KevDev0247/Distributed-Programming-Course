@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: edu.coursera.distributed.FileServerTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 35.19 sec <<< FAILURE! - in edu.coursera.distributed.FileServerTest
-testMissingNestedFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.083 sec  <<< ERROR!
+Tests run: 8, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 35.251 sec <<< FAILURE! - in edu.coursera.distributed.FileServerTest
+testMissingNestedFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.136 sec  <<< ERROR!
 java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -20,7 +20,7 @@ java.net.SocketTimeoutException: Read timed out
 	at edu.coursera.distributed.FileServerTest.sendHttpRequest(FileServerTest.java:123)
 	at edu.coursera.distributed.FileServerTest.testMissingNestedFileGet(FileServerTest.java:242)
 
-testDoublyNestedFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.007 sec  <<< ERROR!
+testDoublyNestedFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.013 sec  <<< ERROR!
 java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -38,7 +38,7 @@ java.net.SocketTimeoutException: Read timed out
 	at edu.coursera.distributed.FileServerTest.sendHttpRequest(FileServerTest.java:123)
 	at edu.coursera.distributed.FileServerTest.testDoublyNestedFileGet(FileServerTest.java:204)
 
-testFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.013 sec  <<< ERROR!
+testFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.01 sec  <<< ERROR!
 java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -56,7 +56,7 @@ java.net.SocketTimeoutException: Read timed out
 	at edu.coursera.distributed.FileServerTest.sendHttpRequest(FileServerTest.java:123)
 	at edu.coursera.distributed.FileServerTest.testFileGet(FileServerTest.java:161)
 
-testFileGets(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.003 sec  <<< ERROR!
+testFileGets(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.01 sec  <<< ERROR!
 java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -74,7 +74,7 @@ java.net.SocketTimeoutException: Read timed out
 	at edu.coursera.distributed.FileServerTest.sendHttpRequest(FileServerTest.java:123)
 	at edu.coursera.distributed.FileServerTest.testFileGets(FileServerTest.java:174)
 
-testNestedFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.009 sec  <<< ERROR!
+testNestedFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.006 sec  <<< ERROR!
 java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -92,25 +92,7 @@ java.net.SocketTimeoutException: Read timed out
 	at edu.coursera.distributed.FileServerTest.sendHttpRequest(FileServerTest.java:123)
 	at edu.coursera.distributed.FileServerTest.testNestedFileGet(FileServerTest.java:191)
 
-testLargeFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.013 sec  <<< ERROR!
-java.net.SocketTimeoutException: Read timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:937)
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:245)
-	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:285)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:344)
-	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:746)
-	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1610)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
-	at edu.coursera.distributed.FileServerTest.sendHttpRequest(FileServerTest.java:123)
-	at edu.coursera.distributed.FileServerTest.testLargeFileGet(FileServerTest.java:217)
-
-testMissingFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.017 sec  <<< ERROR!
+testMissingFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.008 sec  <<< ERROR!
 java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -127,4 +109,22 @@ java.net.SocketTimeoutException: Read timed out
 	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
 	at edu.coursera.distributed.FileServerTest.sendHttpRequest(FileServerTest.java:123)
 	at edu.coursera.distributed.FileServerTest.testMissingFileGet(FileServerTest.java:230)
+
+testLargeFileGet(edu.coursera.distributed.FileServerTest)  Time elapsed: 5.023 sec  <<< ERROR!
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:937)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:245)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:285)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:344)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:746)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1610)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at edu.coursera.distributed.FileServerTest.sendHttpRequest(FileServerTest.java:123)
+	at edu.coursera.distributed.FileServerTest.testLargeFileGet(FileServerTest.java:217)
 

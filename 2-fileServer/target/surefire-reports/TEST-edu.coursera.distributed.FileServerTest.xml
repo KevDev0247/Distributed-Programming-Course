@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.coursera.distributed.FileServerTest" time="35.148" tests="8" errors="7" skipped="0" failures="0">
+<testsuite name="edu.coursera.distributed.FileServerTest" time="35.207" tests="8" errors="7" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2020.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -58,7 +58,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testMissingNestedFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.083">
+  <testcase name="testMissingNestedFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.136">
     <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -80,7 +80,7 @@
 Launching server for testMissingNestedFileGet
 Requesting static/missingdir/missing.txt... ]]></system-err>
   </testcase>
-  <testcase name="testDoublyNestedFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.007">
+  <testcase name="testDoublyNestedFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.013">
     <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -102,7 +102,7 @@ Requesting static/missingdir/missing.txt... ]]></system-err>
 Launching server for testDoublyNestedFileGet
 Requesting static/dir3/dir4/E.txt... ]]></system-err>
   </testcase>
-  <testcase name="testFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.013">
+  <testcase name="testFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.01">
     <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -124,8 +124,8 @@ Requesting static/dir3/dir4/E.txt... ]]></system-err>
 Launching server for testFileGet
 Requesting static/A.txt... ]]></system-err>
   </testcase>
-  <testcase name="testTermination" classname="edu.coursera.distributed.FileServerTest" time="0.003"/>
-  <testcase name="testFileGets" classname="edu.coursera.distributed.FileServerTest" time="5.003">
+  <testcase name="testTermination" classname="edu.coursera.distributed.FileServerTest" time="0.001"/>
+  <testcase name="testFileGets" classname="edu.coursera.distributed.FileServerTest" time="5.01">
     <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -147,7 +147,7 @@ Requesting static/A.txt... ]]></system-err>
 Launching server for testFileGets
 Requesting static/A.txt... ]]></system-err>
   </testcase>
-  <testcase name="testNestedFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.009">
+  <testcase name="testNestedFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.006">
     <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -169,29 +169,7 @@ Requesting static/A.txt... ]]></system-err>
 Launching server for testNestedFileGet
 Requesting static/dir1/C.txt... ]]></system-err>
   </testcase>
-  <testcase name="testLargeFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.013">
-    <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:937)
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:245)
-	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:285)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:344)
-	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:746)
-	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1610)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
-	at edu.coursera.distributed.FileServerTest.sendHttpRequest(FileServerTest.java:123)
-	at edu.coursera.distributed.FileServerTest.testLargeFileGet(FileServerTest.java:217)
-</error>
-    <system-err><![CDATA[
-Launching server for testLargeFileGet
-Requesting static/ABC.txt... ]]></system-err>
-  </testcase>
-  <testcase name="testMissingFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.017">
+  <testcase name="testMissingFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.008">
     <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
 	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
 	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
@@ -212,5 +190,27 @@ Requesting static/ABC.txt... ]]></system-err>
     <system-err><![CDATA[
 Launching server for testMissingFileGet
 Requesting static/missing.txt... ]]></system-err>
+  </testcase>
+  <testcase name="testLargeFileGet" classname="edu.coursera.distributed.FileServerTest" time="5.023">
+    <error message="Read timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:284)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:310)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:351)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:802)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:937)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:245)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:285)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:344)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:746)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1610)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+	at edu.coursera.distributed.FileServerTest.sendHttpRequest(FileServerTest.java:123)
+	at edu.coursera.distributed.FileServerTest.testLargeFileGet(FileServerTest.java:217)
+</error>
+    <system-err><![CDATA[
+Launching server for testLargeFileGet
+Requesting static/ABC.txt... ]]></system-err>
   </testcase>
 </testsuite>
