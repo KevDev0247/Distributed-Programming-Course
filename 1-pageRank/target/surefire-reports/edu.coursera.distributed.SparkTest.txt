@@ -1,4 +1,39 @@
 -------------------------------------------------------------------------------
 Test set: edu.coursera.distributed.SparkTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 297.745 sec - in edu.coursera.distributed.SparkTest
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 436.093 sec <<< FAILURE! - in edu.coursera.distributed.SparkTest
+testIncreasingFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 105.117 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.260907732093288x. Sequential time = 53146 ms, parallel time = 42149 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testIncreasingFiftyThousand(SparkTest.java:272)
+
+testRandomFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 87.238 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.1999419080562963x. Sequential time = 45443 ms, parallel time = 37871 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testRandomFiftyThousand(SparkTest.java:294)
+
+testIncreasingTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 40.196 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.1278561276921395x. Sequential time = 20633 ms, parallel time = 18294 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
+
+testUniformTwentyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 41.641 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.1156430446194225x. Sequential time = 21253 ms, parallel time = 19050 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
+
+testUniformFiftyThousand(edu.coursera.distributed.SparkTest)  Time elapsed: 118.105 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.3283720165285857x. Sequential time = 64616 ms, parallel time = 48643 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testUniformFiftyThousand(SparkTest.java:250)
+

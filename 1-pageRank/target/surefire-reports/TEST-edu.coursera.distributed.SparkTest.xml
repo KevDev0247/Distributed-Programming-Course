@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.coursera.distributed.SparkTest" time="297.685" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="edu.coursera.distributed.SparkTest" time="435.908" tests="6" errors="0" skipped="0" failures="5">
   <properties>
     <property name="idea.version" value="2020.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -58,10 +58,84 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testUniformFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="101.213"/>
-  <testcase name="testRandomTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="29.169"/>
-  <testcase name="testIncreasingTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="22.911"/>
-  <testcase name="testRandomFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="57.816"/>
-  <testcase name="testUniformTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="31.261"/>
-  <testcase name="testIncreasingFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="55.315"/>
+  <testcase name="testIncreasingFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="105.117">
+    <failure message="Expected at least 1.35x speedup, but only saw 1.260907732093288x. Sequential time = 53146 ms, parallel time = 42149 ms" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.260907732093288x. Sequential time = 53146 ms, parallel time = 42149 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testIncreasingFiftyThousand(SparkTest.java:272)
+</failure>
+    <system-err><![CDATA[Running the PageRank algorithm for 5 iterations on a website graph of 50000 websites
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/01/02 14:32:07 INFO PlatformDependent: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+21/01/02 14:32:09 INFO Remoting: Starting remoting
+21/01/02 14:32:09 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.1.49:57413]
+
+Single-core execution ran in 53146 ms
+8-core execution ran in 42149 ms, yielding a speedup of 1.260907732093288x
+
+]]></system-err>
+  </testcase>
+  <testcase name="testRandomTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="43.611"/>
+  <testcase name="testRandomFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="87.238">
+    <failure message="Expected at least 1.35x speedup, but only saw 1.1999419080562963x. Sequential time = 45443 ms, parallel time = 37871 ms" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.1999419080562963x. Sequential time = 45443 ms, parallel time = 37871 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testRandomFiftyThousand(SparkTest.java:294)
+</failure>
+    <system-err><![CDATA[Running the PageRank algorithm for 5 iterations on a website graph of 50000 websites
+
+
+Single-core execution ran in 45443 ms
+8-core execution ran in 37871 ms, yielding a speedup of 1.1999419080562963x
+
+]]></system-err>
+  </testcase>
+  <testcase name="testIncreasingTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="40.196">
+    <failure message="Expected at least 1.35x speedup, but only saw 1.1278561276921395x. Sequential time = 20633 ms, parallel time = 18294 ms" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.1278561276921395x. Sequential time = 20633 ms, parallel time = 18294 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
+</failure>
+    <system-err><![CDATA[Running the PageRank algorithm for 5 iterations on a website graph of 20000 websites
+
+
+Single-core execution ran in 20633 ms
+8-core execution ran in 18294 ms, yielding a speedup of 1.1278561276921395x
+
+]]></system-err>
+  </testcase>
+  <testcase name="testUniformTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="41.641">
+    <failure message="Expected at least 1.35x speedup, but only saw 1.1156430446194225x. Sequential time = 21253 ms, parallel time = 19050 ms" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.1156430446194225x. Sequential time = 21253 ms, parallel time = 19050 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
+</failure>
+    <system-err><![CDATA[Running the PageRank algorithm for 5 iterations on a website graph of 20000 websites
+
+
+Single-core execution ran in 21253 ms
+8-core execution ran in 19050 ms, yielding a speedup of 1.1156430446194225x
+
+]]></system-err>
+  </testcase>
+  <testcase name="testUniformFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="118.105">
+    <failure message="Expected at least 1.35x speedup, but only saw 1.3283720165285857x. Sequential time = 64616 ms, parallel time = 48643 ms" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.3283720165285857x. Sequential time = 64616 ms, parallel time = 48643 ms
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
+	at edu.coursera.distributed.SparkTest.testUniformFiftyThousand(SparkTest.java:250)
+</failure>
+    <system-err><![CDATA[Running the PageRank algorithm for 5 iterations on a website graph of 50000 websites
+
+
+Single-core execution ran in 64616 ms
+8-core execution ran in 48643 ms, yielding a speedup of 1.3283720165285857x
+
+]]></system-err>
+  </testcase>
 </testsuite>
