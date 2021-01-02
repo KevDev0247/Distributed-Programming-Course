@@ -1,12 +1,9 @@
 package edu.coursera.distributed;
 
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.File;
+import java.nio.file.Files;
 
 /**
  * A basic and very limited implementation of a file server that responds to GET
@@ -31,21 +28,25 @@ public final class FileServer {
          * ServerSocket object.
          */
         while (true) {
-
-            // TODO Delete this once you start working on your solution.
-            throw new UnsupportedOperationException();
-
             // TODO 1) Use socket.accept to get a Socket object
+            Socket s = socket.accept();
 
             /*
              * TODO 2) Using Socket.getInputStream(), parse the received HTTP
-             * packet. In particular, we are interested in confirming this
-             * message is a GET and parsing out the path to the file we are
-             * GETing. Recall that for GET HTTP packets, the first line of the
-             * received packet will look something like:
-             *
-             *     GET /path/to/file HTTP/1.1
              */
+            InputStream stream = s.getInputStream();
+            InputStreamReader reader = new InputStreamReader(stream);
+            BufferedReader bufferedReader = new BufferedReader(reader);
+
+            String line = bufferedReader.readLine();
+            assert line != null;
+            assert line.startsWith("GET");
+            final String path = line.split(" ")[1];
+
+            final File fullPath = new File(String.valueOf(fs), path);
+
+            OutputStream out = s.getOutputStream();
+            PrintWriter printer = new PrintWriter(out);
 
             /*
              * TODO 3) Using the parsed path to the target file, construct an
@@ -67,6 +68,16 @@ public final class FileServer {
              *
              * Don't forget to close the output stream.
              */
+            if (fullPath.isFile()) {
+                printer.write("HTTP/1.0 200 OK\r\n");
+                printer.write("\r\n");
+                printer.write("\r\n");
+                printer.write(new String(Files.readAllBytes(fullPath.toPath())) + "\r\n");
+            } else {
+                printer.write("HTTP/1.0 404 Not Found\n");
+                printer.write("\r\n");
+                printer.write("\r\n");
+            }
         }
     }
 }

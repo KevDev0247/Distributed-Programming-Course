@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.coursera.distributed.SparkTest" time="328.678" tests="6" errors="0" skipped="0" failures="4">
+<testsuite name="edu.coursera.distributed.SparkTest" time="297.685" tests="6" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="idea.version" value="2020.3"/>
+    <property name="idea.version" value="2020.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="13.0.1+9"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.1\bin"/>
@@ -25,11 +25,11 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="maven.ext.class.path" value="C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.5981.155\plugins\maven\lib\maven-event-listener.jar"/>
-    <property name="classworlds.conf" value="C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.5981.155\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="maven.ext.class.path" value="C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.6682.168\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.6682.168\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-13.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\AdoptOpenJDK\jre-8.0.272.10-hotspot\bin;C:\Program Files\Java\jdk-13.0.1\bin;&quot;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-13.0.1;C:\Program Files\Java\jre1.8.0_201&quot;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;E:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64;E:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\Scripts;C:\Program Files\nodejs;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\PuTTY\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Owner\AppData\Local\Microsoft\WindowsApps;C:\Users\Owner\AppData\Roaming\npm;C:\Users\Owner\AppData\Local\GitHubDesktop\bin;E:\PyCharm 2019.3.3\bin;;E:\WebStorm 2020.1\bin;;E:\IntelliJ IDEA 2020.1.1\bin;;C:\Users\Owner\AppData\Local\Programs\Microsoft VS Code\bin;E:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\Scripts;E:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64;C:\Program Files\nodejs;C:\Users\Owner\.dotnet\tools;C:\Users\Owner\AppData\Local\Microsoft\WindowsApps;;."/>
-    <property name="maven.conf" value="C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.5981.155\plugins\maven\lib\maven3/conf"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-13.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\AdoptOpenJDK\jre-8.0.272.10-hotspot\bin;C:\Program Files\Java\jdk-13.0.1\bin;&quot;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-13.0.1;C:\Program Files\Java\jre1.8.0_201&quot;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;E:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64;E:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\Scripts;C:\Program Files\nodejs;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\PuTTY\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Owner\AppData\Local\Microsoft\WindowsApps;C:\Users\Owner\AppData\Roaming\npm;C:\Users\Owner\AppData\Local\GitHubDesktop\bin;E:\PyCharm 2019.3.3\bin;;E:\WebStorm 2020.1\bin;;E:\IntelliJ IDEA 2020.1.1\bin;;C:\Users\Owner\AppData\Local\Programs\Microsoft VS Code\bin;E:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\Scripts;E:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64;C:\Program Files\nodejs\;C:\Users\Owner\.dotnet\tools;C:\Users\Owner\AppData\Local\Microsoft\WindowsApps;&quot;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\wbem;&quot;;C:\Windows\System32\;;."/>
+    <property name="maven.conf" value="C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.6682.168\plugins\maven\lib\maven3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="57.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -40,17 +40,17 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="13"/>
     <property name="user.name" value="Owner"/>
-    <property name="java.class.path" value="C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.5981.155\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.5981.155\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.class.path" value="C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.6682.168\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.6682.168\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="13"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.3 test"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.3.1 test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-13.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.version" value="13.0.1"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.5981.155\plugins\maven\lib\maven3"/>
+    <property name="maven.home" value="C:\Users\Owner\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\203.6682.168\plugins\maven\lib\maven3"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2019-10-15"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
@@ -58,66 +58,10 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testUniformFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="95.991"/>
-  <testcase name="testIncreasingTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="29.139">
-    <failure message="Expected at least 1.35x speedup, but only saw 1.0572260647979614x. Sequential time = 14521 ms, parallel time = 13735 ms" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.0572260647979614x. Sequential time = 14521 ms, parallel time = 13735 ms
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
-	at edu.coursera.distributed.SparkTest.testIncreasingTwentyThousand(SparkTest.java:261)
-</failure>
-    <system-err><![CDATA[Running the PageRank algorithm for 5 iterations on a website graph of 20000 websites
-
-
-Single-core execution ran in 14521 ms
-8-core execution ran in 13735 ms, yielding a speedup of 1.0572260647979614x
-
-]]></system-err>
-  </testcase>
-  <testcase name="testRandomTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="33.233">
-    <failure message="Expected at least 1.35x speedup, but only saw 1.0455175892069095x. Sequential time = 16584 ms, parallel time = 15862 ms" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.0455175892069095x. Sequential time = 16584 ms, parallel time = 15862 ms
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
-	at edu.coursera.distributed.SparkTest.testRandomTwentyThousand(SparkTest.java:283)
-</failure>
-    <system-err><![CDATA[Running the PageRank algorithm for 5 iterations on a website graph of 20000 websites
-
-
-Single-core execution ran in 16584 ms
-8-core execution ran in 15862 ms, yielding a speedup of 1.0455175892069095x
-
-]]></system-err>
-  </testcase>
-  <testcase name="testRandomFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="60.309"/>
-  <testcase name="testUniformTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="38.967">
-    <failure message="Expected at least 1.35x speedup, but only saw 0.9837444819527396x. Sequential time = 18942 ms, parallel time = 19255 ms" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 0.9837444819527396x. Sequential time = 18942 ms, parallel time = 19255 ms
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
-	at edu.coursera.distributed.SparkTest.testUniformTwentyThousand(SparkTest.java:239)
-</failure>
-    <system-err><![CDATA[Running the PageRank algorithm for 5 iterations on a website graph of 20000 websites
-
-
-Single-core execution ran in 18942 ms
-8-core execution ran in 19255 ms, yielding a speedup of 0.9837444819527396x
-
-]]></system-err>
-  </testcase>
-  <testcase name="testIncreasingFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="71.039">
-    <failure message="Expected at least 1.35x speedup, but only saw 1.2981159230668586x. Sequential time = 39686 ms, parallel time = 30572 ms" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected at least 1.35x speedup, but only saw 1.2981159230668586x. Sequential time = 39686 ms, parallel time = 30572 ms
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at edu.coursera.distributed.SparkTest.testDriver(SparkTest.java:229)
-	at edu.coursera.distributed.SparkTest.testIncreasingFiftyThousand(SparkTest.java:272)
-</failure>
-    <system-err><![CDATA[Running the PageRank algorithm for 5 iterations on a website graph of 50000 websites
-
-
-Single-core execution ran in 39686 ms
-8-core execution ran in 30572 ms, yielding a speedup of 1.2981159230668586x
-
-]]></system-err>
-  </testcase>
+  <testcase name="testUniformFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="101.213"/>
+  <testcase name="testRandomTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="29.169"/>
+  <testcase name="testIncreasingTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="22.911"/>
+  <testcase name="testRandomFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="57.816"/>
+  <testcase name="testUniformTwentyThousand" classname="edu.coursera.distributed.SparkTest" time="31.261"/>
+  <testcase name="testIncreasingFiftyThousand" classname="edu.coursera.distributed.SparkTest" time="55.315"/>
 </testsuite>
